@@ -1,0 +1,5 @@
+.DS_Store
+S3_test/.terraform.lock.hcl
+S3_test/.terraform/providers/registry.terraform.io/hashicorp/aws/5.56.1/darwin_arm64/terraform-provider-aws_v5.56.1_x5
+S3_test/.terraform/providers/registry.terraform.io/hashicorp/aws/5.56.1/darwin_arm64/LICENSE.txt
+S3_test/terraform.tfstate.backup
