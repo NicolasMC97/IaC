@@ -11,8 +11,13 @@ provider "aws" {
     region="us-east-1"
 }
 
+locals {
+  buckets=5
+}
+
 resource "aws_s3_bucket" "example" {
-  bucket = "my-tf-test-bucket-nmc-us-east"
+  count=local.buckets
+  bucket = "my-tf-test-bucket-nmc-us-east_${count.index}"
 
   tags = {
     Name        = "My bucket TF"
