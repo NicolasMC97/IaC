@@ -17,7 +17,7 @@ locals {
 
 resource "aws_s3_bucket" "example" {
   count=local.buckets
-  bucket = "my-tf-test-bucket-nmc-us-east_${count.index}"
+  bucket = "my-tf-test-bucket-gitactions-us-east_${count.index}"
 
   tags = {
     Name        = "My bucket TF"
