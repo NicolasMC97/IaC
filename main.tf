@@ -12,12 +12,12 @@ provider "aws" {
 }
 
 locals {
-  buckets=1
+  buckets=4
 }
 
 resource "aws_s3_bucket" "example" {
   count=local.buckets
-  bucket = "my-tf-test-bucket-gitactions-${count.index}"
+  bucket = "miguel-tf-test-bucket-gitactions-${count.index}"
 
   tags = {
     Name        = "My bucket TF"
