@@ -45,9 +45,7 @@
 name: 'Terraform'
 
 on:
-  push:
-    branches: [ "main" ]
-  pull_request:
+  workflow_dispatch:  # Permite ejecutar el flujo de trabajo manualmente desde la interfaz de GitHub
 
 permissions:
   contents: read
