@@ -12,7 +12,7 @@ provider "aws" {
 }
 
 locals {
-  buckets=5
+  buckets=1
 }
 
 resource "aws_s3_bucket" "example" {
